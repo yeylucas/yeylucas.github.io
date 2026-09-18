@@ -68,10 +68,10 @@ a:hover {
     font-size: 22px;
     font-weight: 600;
     color: #222;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #333;
+    margin-top: 36px;
+    margin-bottom: 18px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 /* Project Cards */
@@ -226,4 +226,241 @@ a:hover {
     font-size: 13px;
     margin-right: 6px;
     margin-bottom: 6px;
+}
+/* ------------------------------------------------------------ */
+/* Writing / Blog                                               */
+/* ------------------------------------------------------------ */
+
+/* Homepage writing list */
+.writing-row {
+    margin-bottom: 20px;
+}
+
+.writing-item {
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+.writing-date {
+    font-weight: 600;
+    color: #1772d0;
+    margin-right: 10px;
+}
+
+.writing-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #222;
+}
+
+.writing-title:hover {
+    color: #1772d0;
+}
+
+.writing-blurb {
+    font-size: 15px;
+    color: #666;
+    margin-top: 2px;
+}
+
+/* Essay pages */
+.essay-nav {
+    font-size: 14px;
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.essay-nav a {
+    color: #888;
+}
+
+.essay-nav a:hover {
+    color: #1772d0;
+}
+
+.essay {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.essay-kicker {
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 14px;
+}
+
+.essay-title {
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: #111;
+    margin-bottom: 14px;
+}
+
+.essay-meta {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.essay-preface {
+    font-family: 'Source Sans 3', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.essay-body {
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #222;
+}
+
+.essay-body p {
+    margin-bottom: 24px;
+}
+
+.essay-body h2 {
+    font-family: 'Source Sans 3', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #111;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    border: none;
+    padding: 0;
+}
+
+.essay-body blockquote.epigraph {
+    font-style: italic;
+    font-size: 19px;
+    color: #444;
+    margin: 0 0 32px 0;
+    padding: 0 0 0 20px;
+    border-left: 2px solid #ddd;
+}
+
+.essay-body blockquote.epigraph p {
+    margin-bottom: 0;
+}
+
+.essay-references {
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.essay-references h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 16px;
+}
+
+.essay-references ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.essay-references li {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #555;
+    padding-left: 1.6em;
+    text-indent: -1.6em;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.essay-footer {
+    max-width: 680px;
+    margin: 64px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+
+.essay-footer a {
+    color: #888;
+}
+
+.essay-footer a:hover {
+    color: #1772d0;
+}
+
+/* Writing index page */
+.writing-index {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.writing-index .section-title {
+    margin-top: 0;
+}
+
+.writing-index .writing-item {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.writing-index .writing-item:last-child {
+    border-bottom: none;
+}
+
+.writing-index .writing-date {
+    flex: 0 0 110px;
+    font-weight: 400;
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+}
+
+.writing-index .writing-title {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.writing-index .writing-title a {
+    color: #222;
+}
+
+.writing-index .writing-title a:hover {
+    color: #1772d0;
+}
+
+@media (max-width: 768px) {
+    .writing-index .writing-item {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .writing-index .writing-date {
+        flex: none;
+    }
+
+    .essay-title {
+        font-size: 32px;
+    }
+
+    .essay-body {
+        font-size: 18px;
+    }
+
+    .essay-nav {
+        margin-bottom: 36px;
+    }
 }
